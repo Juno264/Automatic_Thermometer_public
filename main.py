@@ -87,7 +87,7 @@ for i in all_users:
     #体温２
     dropdown = browser.find_element(By.XPATH,('/html/body/div[4]/div/div[2]/div/div/div/div/div[1]/div[3]/select'))
     select = Select(dropdown)
-    select.select_by_index(26)
+    select.select_by_index(26)#36.6度になる
 
     #体温３
     browser.find_element(By.XPATH,('/html/body/div[4]/div/div[2]/div/div/div/div/div[1]/div[5]')).click()
@@ -101,7 +101,8 @@ for i in all_users:
     #時間２
     dropdown = browser.find_element(By.XPATH,('/html/body/div[4]/div/div[2]/div/div/div/div/div[1]/div[3]/select'))
     select = Select(dropdown)
-    select.select_by_index(6)
+    select.select_by_index(6)#午前6時になる
+   
     # sleep(1)
 
     #時間３
