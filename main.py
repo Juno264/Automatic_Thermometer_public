@@ -8,7 +8,7 @@ from typing_extensions import Self
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-#Discord用のwebhookを追加
+#Discord用のwebhookを追加、任意で
 discord = Discord(url="WEDHOOK")
 
 #userdataクラス
@@ -19,7 +19,7 @@ class Userdata:
         self.password: String = password
 
 
-#ユーザー情報
+#ユーザー情報（複数登録可
 user0 = Userdata("NAME1",PHONENUMBER1,"PASS1")
 user1 = Userdata("NAME2",PHONENUMBER1,"PASS2")
 ...
@@ -128,5 +128,5 @@ for i in all_users:
     # 閉じる
     browser.close()
     
-    #discordで報告
+    #discordで報告、任意で
     discord.post(content=i.name+"の検温データを送信しました")
