@@ -4,3 +4,6 @@ LEBERの検温を自動で送信してくれるやつ
 
 ## Usage
 使い方は `main.py` の電話番号とパスワードを自分のものに置き換えてから `python main.py` を実行してください。
+
+zenn
+https://zenn.dev/jup1ter/articles/4917bf291ba681
